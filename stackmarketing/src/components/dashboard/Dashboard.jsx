@@ -2,6 +2,7 @@ import { IconArrowNarrowUp } from "@tabler/icons-react";
 import React from "react";
 import money from "../../../image/money.png";
 import Topproducts from "./Topproducts";
+import Harbalorders from "./Harbalorder";
 
 const Dashboard = () => {
   const status = [
@@ -67,8 +68,11 @@ const Dashboard = () => {
             </div>
           ))}
         </div>
-        <div>
+        <div className="mt-10">
           <Topproducts />
+        </div>
+        <div className="mt-10">
+          <Harbalorders />
         </div>
       </div>
     </>
