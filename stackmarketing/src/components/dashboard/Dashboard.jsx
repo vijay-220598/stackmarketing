@@ -3,6 +3,7 @@ import React from "react";
 import money from "../../../image/money.png";
 import Topproducts from "./Topproducts";
 import Harbalorders from "./Harbalorder";
+import SaleStatistics from "./SaleStatistics";
 
 const Dashboard = () => {
   const status = [
@@ -67,6 +68,9 @@ const Dashboard = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-10">
+          <SaleStatistics />
         </div>
         <div className="mt-10">
           <Topproducts />
