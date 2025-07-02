@@ -21,7 +21,6 @@ const Navber = () => {
 
   return (
     <div className="flex h-screen">
-  
       <nav
         className={`${
           open ? "w-64" : "w-20"
@@ -109,7 +108,6 @@ const Navber = () => {
         </ul>
       </nav>
 
-
       <div className="flex-1 flex flex-col h-screen overflow-hidden">
         <div className="w-full h-14 px-4 py-3 flex justify-between items-center">
           <IconHome
@@ -123,13 +121,11 @@ const Navber = () => {
           </div>
         </div>
 
-    
-        <div className="flex-1 overflow-auto p-4">
+        <div className="flex-1 overflow-auto p-4 bg-gray-100 ">
           <Outlet />
         </div>
 
-
-        <div className="bg-white shadow-md pl-10 pr-10">
+        <div className=" bg-gray-100 shadow-md pl-10 pr-10">
           <Footer />
         </div>
       </div>
