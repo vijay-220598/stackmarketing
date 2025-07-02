@@ -24,10 +24,10 @@ const Navber = () => {
       <nav
         className={`${
           open ? "w-64" : "w-20"
-        } duration-300 bg-indigo-950 text-white p-5 pt-8 relative`}
+        } duration-300 bg-gray-600 text-white p-5 pt-8 relative`}
       >
         <IconChevronLeft
-          className={`absolute cursor-pointer -right-3 top-15 w-7 h-7 p-1 border-2 rounded-full bg-slate-500 ${
+          className={`absolute cursor-pointer -right-3 top-15 w-7 h-7 p-1 border-2 rounded-full bg-gray-500 ${
             !open && "rotate-180"
           }`}
           onClick={() => setOpen(!open)}
@@ -41,7 +41,7 @@ const Navber = () => {
             }`}
           />
           <h2
-            className={`text-white origin-left font-medium text-xl duration-300 ${
+            className={`text-white font-semibold origin-left text-xl duration-300 ${
               !open && "scale-0"
             }`}
           >
@@ -53,7 +53,7 @@ const Navber = () => {
           <li>
             <Link
               to="dashboard"
-              className="flex items-center gap-x-5 text-gray-300 p-2 rounded-md hover:bg-slate-600"
+              className="flex items-center gap-x-5 text-white p-2 rounded-md hover:bg-neutral-500"
             >
               <IconLayoutDashboard className="w-6 h-6" />
               <span className={`${!open && "hidden"} origin-left duration-200`}>
@@ -64,7 +64,7 @@ const Navber = () => {
           <li>
             <Link
               to="products"
-              className="flex items-center gap-x-5 text-gray-300 p-2 rounded-md hover:bg-slate-600"
+              className="flex items-center gap-x-5 text-white p-2 rounded-md hover:bg-neutral-500"
             >
               <IconShoppingBag className="w-6 h-6" />
               <span className={`${!open && "hidden"} origin-left duration-200`}>
@@ -75,7 +75,7 @@ const Navber = () => {
           <li>
             <Link
               to="order"
-              className="flex items-center gap-x-5 text-gray-300 p-2 rounded-md hover:bg-slate-600"
+              className="flex items-center gap-x-5 text-white p-2 rounded-md hover:bg-neutral-500"
             >
               <IconShoppingCart className="w-6 h-6" />
               <span className={`${!open && "hidden"} origin-left duration-200`}>
@@ -86,7 +86,7 @@ const Navber = () => {
           <li>
             <Link
               to="settings"
-              className="flex items-center gap-x-5 text-gray-300 p-2 rounded-md hover:bg-slate-600"
+              className="flex items-center gap-x-5 text-white p-2 rounded-md hover:bg-neutral-500"
             >
               <IconSettings className="w-6 h-6" />
               <span className={`${!open && "hidden"} origin-left duration-200`}>
@@ -97,7 +97,7 @@ const Navber = () => {
           <li>
             <Link
               to="profile"
-              className="flex items-center gap-x-5 text-gray-300 p-2 rounded-md hover:bg-slate-600"
+              className="flex items-center gap-x-5 text-white p-2 rounded-md hover:bg-neutral-500"
             >
               <IconUserFilled className="w-6 h-6" />
               <span className={`${!open && "hidden"} origin-left duration-200`}>
