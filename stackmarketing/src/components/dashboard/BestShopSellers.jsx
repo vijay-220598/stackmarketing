@@ -99,7 +99,7 @@ const BestShopSellers = () => {
             <div className="w-1/3 text-sm text-gray-700">{item.category}</div>
 
             {/* Amount + Chart */}
-            <div className="flex items-center gap-3 justify-end w-1/3">
+            <div className="flex items-center gap-5 justify-end w-1/3">
               <p className="text-sm font-semibold text-gray-800">
                 {item.amount}
               </p>
